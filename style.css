@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #202020;
+}
+.conatiner{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.calculter{
+    /* rem is best for resposiveness */
+    max-width: 8rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #252525;
+    box-shadow: 0px -1px 15px 1px #8ee98e;
+
+}
+
+.display {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: right;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 254, 254);
+    color: #000000c5;
+    font-weight: 600;
+    padding: 10px;
+    box-shadow: 0px -1px 19px 1px #777272;
+}
+.calculter .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    color: rgb(0, 255, 81);
+    background-color: transparent;
+}
+.number-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-column: 1/4;
+    grid-row: 2/5;
+}
+
+.allClean {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.rightbracket{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.leftbracket{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.moduls {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.division {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.subtraction {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.Addition {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+.multiplaction {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+.zero {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.point {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.cancel {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+.equal {
+    grid-row: 6/7;
+    grid-column: 1/5;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #202020;
+    text-align: center;
+}
+
+footer h5 {
+    color: rgb(0, 255, 81);
+    font-size: 0.8rem;
+}
